@@ -1,0 +1,64 @@
+
+/*Variáveis
+Azul médio -> #2576A8;
+Azul escuro -> #1A5478;
+Azul claro -> #7BC7F5;
+Azul -> #36ACF5;
+*/
+
+@mixin transition {
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+
+body{
+	background: #36ACF5;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	height: 100%;
+}
+
+#main{
+	width: 800px;
+	margin: 30px auto;
+	color: white;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 2.6em;
+	text-transform: uppercase;
+}
+
+#seg, #min, #sep, #hora{
+	font-size: 2em;
+}
+
+button{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-khtml-border-radius: 5px; 
+	background-color: #36ACF5;
+	color: white;
+	border: solid 1px white;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1.2em;
+	padding: 18px 10px;
+	width: 180px;
+	margin: 10px;
+	outline: none;
+}
+
+button:hover{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	background-color: white;
+	border: solid 1px white;
+	color: #36ACF5;	
+}

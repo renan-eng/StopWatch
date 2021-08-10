@@ -6,13 +6,6 @@ Azul claro -> #7BC7F5;
 Azul -> #36ACF5;
 */
 
-@mixin transition {
--webkit-transition: all 0.5s ease-in-out;
--moz-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
-}
-
-
 body{
 	background: #36ACF5;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -61,4 +54,18 @@ button:hover{
 	background-color: white;
 	border: solid 1px white;
 	color: #36ACF5;	
+}
+
+@media screen and (max-width: 500px)
+{
+	#main{
+		width: 100%;
+		margin: 30px auto;
+		text-align: center;
+	}
+  .but{
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  }
 }

@@ -73,7 +73,7 @@ window.onload = function () {
 			mudarMin.innerHTML = "0" + min;
 		}		
 
-		if(min > 9){
+		if(min > 9){			
 			mudarMin.innerHTML = min;
 		}
 
@@ -87,8 +87,11 @@ window.onload = function () {
 
 		if (hora <= 9){
 			mudarHora.innerHTML = "0" + hora;
-		} else {
-			mudarHora.innerHTML = hora;
-		}
+		} 
+
+		if (hora > 9){
+			console.log("hora2");
+			mudarHora.innerHTML = hora;		
+		}			
 	}
 }
